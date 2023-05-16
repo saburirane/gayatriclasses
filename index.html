@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+     <title>Tution web site</title>
+     <link rel= "stylesheet" href= "style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+ </head>
+ <body>
+    <!---------------------header sectiobn-------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class= "fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Gayatri Classes</p>
+                <h1><p> Tradition of Succes</p></h1>
+                <h1><p> Since 1979</p></h1>
+            </div>
+        </div>
+        
+
+    </div>
+<!---------------about-------------------------->
+<div id="about">
+<div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user1.png" alt="">
+      </div> 
+      <div class="about-col-2">
+        <h1 class="sub-title">About Us</h1>
+        <p>We offer coaching for a range of academic programs from KG to PG under one roof, including 12th Commerce/Science, 10th SSC & CBSE, T.Y.B.Com, SYBCom & FYBCom. Our qualified and experienced teaching staff provides personalized attention and ensures timely completion of the syllabus.
+At Gayatri Classes, we believe in providing an affordable fee structure without compromising on the quality of education. We also offer study materials, exclusive weekly tests, and regular feedback to parents. In addition, we now offer online lectures for students who prefer to learn from the comfort of their own homes.</p>
+      </div>  
+    </div>
+</div>
+</div>
+<!-----------------------------services section-->
+<div id="services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+    <div>
+        <i class="fa-solid fa-chalkboard"></i>
+        <h2>Online lectures</h2>
+    <p>As mentioned earlier, Gayatri Classes now offers online lectures for students who prefer to learn from the comfort of their own homes. This service allows students to access our high-quality education from anywhere in the world with an internet connection.</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-user-graduate"></i>
+        <h2>Competitive exam coaching</h2>
+        <p>
+            In addition to academic coaching, Gayatri Classes offers coaching for competitive exams such as JEE, NEET, and CET. Our experienced faculty provide comprehensive coaching to help students excel in these highly competitive exams.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <h2>Career counseling</h2>
+            <p>
+                Gayatri Classes offers career counseling services to help students make informed decisions about their future. Our experienced counselors provide guidance on career paths, education options, and job opportunities to help students achieve their goals.</p>
+            
+            
+            </div>
+
+
+
+    </div>
+</div>
+</div>
+
+
+<!-----------------------------services section------>
+    <div id="contact">
+        <div class= "container">
+            <div class= "row">
+                <div class="contact-left" >
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class= "fas fa-paper-plane"></i>ketakigt@gmail.com.com</p>
+                    <p><i class= "fas fa-phone-square-alt"></i>8793621527</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/people/Gayatri-Classes-Palghar/100063976263318/"><i class= "fab fa-facebook"></i></a>
+                        <a href=""><i class= "fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram" ></i></a>
+                        <a href=""><i class= "fab fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href= "images/GC.pdf" download class= "btn btn2" >Download Broacher</a>
+
+                </div>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20613.784241357076!2d72.75669826172171!3d19.70260835130312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71dfbe21139c5%3A0x147456c225438b26!2sGayatri%20Coaching%20Classes!5e0!3m2!1sen!2sin!4v1684261551623!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type= "text" name="Name" placeholder= "Your Name" required>
+                        <input type= "email" name= "Email" placeholder= "Email id" required>
+                        <input type= "text" name="Phone" placeholder="Phone no." required>
+                        <input type= "board" name="Board" placeholder="SSC,CBSE,ICBSC,HSC..etc" required>
+                        <input type= "std" name="Std" placeholder="1,2,FY,SY,TY..etc" required>
+                        <textarea name="Message" rows="4" placeholder= "How can we help you?"></textarea>
+                        <button type= "submit" class="btn btn2">Send</button>
+                        </form>
+                        <span id="msg"></span>
+                </div>
+           </div>
+       </div>
+       <div class="copyright">
+        <p>Copyright ©Gayatri Classes . Made wtih <i class= "fas fa-heart" ></i> by Saburi Rane</p>
+
+
+       </div>
+
+
+
+    </div>
+   
+
+<script>
+var sidemeu = document.getElementById("sidemenu");
+function openmenu (){
+    sidemeu.style.right = "0";
+ }
+function closemenu (){ 
+    sidemeu.style.right = "-200px";
+}
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxhN64xk9Wz6jEmaMEXTM9_i3npHFAFPa_czk2HES-cFFZaEjjBWmZG_C0lBVuciJ50AQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
